@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Webinar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Welcome to Our Full Stack Development Webinar!</h1>
+
+        <button id="toggleFormButton" target="_blank">Register Now</button>
+
+        <form id="registrationForm" class="hidden">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="confirmationMessage" class="hidden">
+            <p>Thank you for registering!</p>
+            <p>We look forward to seeing you on the webinar.</p>
+            <p>An email with the webinar details and a calendar reminder will be sent to you shortly.</p>
+        </div>
+
+        <div class="webinar-topics">
+            <h2>Webinar Topics:</h2>
+            <ul>
+                <li>
+                    <h3>Session 1: Introduction to Web Development</h3>
+                    <p>Duration: 30 minutes</p>
+                    <ul>
+                        <li>Topic 1.1: HTML Basics</li>
+                        <li>Topic 1.2: CSS Fundamentals</li>
+                        <li>Topic 1.3: Javascript</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Session 2: Front-end Frameworks</h3>
+                    <p>Duration: 45 minutes</p>
+                    <ul>
+                        <li>Topic 2.1: Basics of Bootstrap</li>
+                        <li>Topic 2.2: Angular Basics </li>
+                        <li>Topic 2.3: Introduction to React</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Session 3: Back-end Development</h3>
+                    <p>Duration: 60 minutes</p>
+                    <ul>
+                        <li>Topic 3.1: Introduction to Node.js</li>
+                        <li>Topic 3.2: Database Integration with MongoDB</li>
+                        <li>Topic 3.3: Search Engine Optimization (SEO) Basics</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <img src="image.png" id="img" width="250" ,height="250">
+
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
